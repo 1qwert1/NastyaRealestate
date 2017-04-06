@@ -234,7 +234,7 @@ $(function() {
             $top -= 100;
         $("html, body").stop().animate({
             scrollTop: $top
-        }, 1500, "easeInOutExpo");
+        }, 1600, "easeInOutExpo");
         event.preventDefault()
     })
 });
