@@ -1,0 +1,272 @@
+@import "font-awesome.css"
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Pattaya')
+
+$text-color: black
+$mainColor: #e7e7e7
+$backgroundColor: #626262
+
+*
+  ::after, ::before
+    content: ''
+
+body, html
+  height: 100%
+
+a
+  text-decoration: none
+  color: #000
+
+*
+  font-size: 16px
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+  box-sizing: border-box
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video
+  margin: 0
+  padding: 0
+  vertical-align: baseline
+  border: 0
+
+li
+  list-style-type: none
+
+//кнопка со слайдером
+.with_blind_button
+  display: inline-block
+  min-width: 30%
+  padding: 0 15px
+  border: 1px solid lighten($mainColor, 50%)
+  margin: 20px
+  min-height: 40px
+  background-color: inherit
+  color: #fff64b
+  line-height: 40px
+  text-align: center
+  cursor: pointer
+  span
+    z-index: 2
+    font-size: 1.2em
+    color: inherit
+    display: inline-block
+    font-weight: 600
+    position: relative
+  &:hover
+    color: lighten($text-color, 2%)
+  &.shade
+    cursor: pointer
+    position: relative
+    -webkit-transition: all .9s
+    -moz-transition: all .9s
+    -ms-transition:  all .9s
+    -o-transition:  all .9s
+    transition:  all .9s
+    &::after
+      background-color: white
+      top: 0
+      left: 0
+      position: absolute
+      transform: scaleX(0)
+      width: 100%
+      height: 100%
+      display: inline-block
+      transition: transform .4s
+      transform-origin: left
+    &:hover
+      &::after
+        transform: scaleX(1)
+
+
+header
+  z-index: 5
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  border-bottom: 1px solid black
+  transition: all .5s ease
+
+  .top-head
+    text-align: right
+    background-color: lighten($backgroundColor, 5%)
+    opacity: .5
+    li
+      font-size: .8em
+      a
+        color: lighten($mainColor, 90%)
+  li
+    display: inline-block
+    padding: 5px 15px
+    color: lighten($mainColor, 90%)
+
+.main-top
+  background-color: rgba($backgroundColor, .3)
+  text-align: right
+  .logo
+    color: lighten($mainColor, 95%)
+    text-align: left
+    display: inline-block
+    min-width: 40%
+    font-family: 'Pattaya', "Roboto"
+    font-size: 2.1em
+    padding: 0 100px 0 0
+    span
+      color: #ff0c1c
+      font-family: 'Pattaya', "Roboto"
+      font-size: 1.2em
+      text-transform: uppercase
+  ul
+    display: inline-block
+    padding-right: 50px
+    line-height: 2.2em
+  li
+    display: inline-block
+    padding: 10px
+    a
+      transition: all .5s ease
+      color: #ffffff
+      font-size: 1.2em
+      &:hover, :active
+        text-decoration: underline
+
+//применяется к шапке после начала скролинга
+header.white-header
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16)
+  background-color: #fff
+  border-bottom: none
+  opacity: .95
+  z-index: 10
+  .main-top
+    background-color: transparent
+    a, .logo
+      color: #000
+    a
+      font-size: 1em
+  .top-head
+    li
+      a
+        color: lighten($mainColor, 99%)
+
+//блоки скартинками
+.first
+  background-image: url("/img/main.jpg")
+.second
+  background-image: url("/img/second.jpg")
+.therd
+  background-image: url("/img/therd.jpg")
+.next
+  width: 100%
+
+.main
+  position: relative
+  min-height: 100%
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  background-color: #000
+  .text_in_main
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    margin: 0 auto
+    background-color: rgba($text-color, .4)
+    text-align: center
+    .text_down
+      position: absolute
+      top: 30%
+      left: 0
+      right: 0
+      .textInform
+        max-width: 90%
+        margin: auto
+        color: rgba(255,255,255,.95)
+        font-size: 2.5em
+        border-bottom: 3px solid #fff
+        padding-bottom: 20px
+      .textInform_
+        font-size: 1.9em
+        color: rgba(255,255,255,.8)
+        overflow: hidden
+        text-align: center
+
+//текстовые блоки на белом фоне
+.first-text
+  margin: 80px 0
+.block-text
+  font-size: 1.3em
+  margin: 20px
+  padding: 20px
+  i
+    color: red
+    font-size: 1.8em
+    margin-right: 10px
+
+
+.stamp
+  background: url('/img/stamp.png') no-repeat
+  background-position: right 10% bottom 10%
+  -webkit-background-size: 25%
+  background-size: 25%
+
+
+.footer
+  position: relative
+  .copyright
+    position: absolute
+    left: 0
+    width: 100%
+    text-align: center
+    bottom: 10px
+    font-size: .9em
+
+
+
+//price start w3schools.com/howto/howto_css_pricing_table.asp
+
+.price-wrapper
+  margin: 50px auto 50px auto
+  overflow: hidden
+  .columns
+    padding: 8px
+    .price
+      list-style-type: none
+      border: 1px solid #eee
+      margin: 0
+      padding: 0
+      -webkit-transition: 0.3s
+      transition: 0.3s
+      font-size: 20px
+      &:hover
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+      .header
+        background-color: #111
+        color: white
+        font-size: 25px
+        &.red
+          background-color: red
+        &.green
+          background-color: green
+      li
+        border-bottom: 1px solid #eee
+        padding: 20px
+        text-align: center
+      .grey
+        background-color: #eee
+
+    .button
+      background-color: #4CAF50
+      border: none
+      color: white
+      padding: 10px 25px
+      text-align: center
+      text-decoration: none
+      font-size: 18px
+
+//price end w3schools.com/howto/howto_css_pricing_table.asp
+
+@import "media.sass"

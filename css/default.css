@@ -1,0 +1,140 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+
+}
+
+header {
+}
+
+.intro-section {
+
+    /*padding-top: 100px;*/
+    text-align: center;
+    background: #eee;
+}
+
+.main-section {
+
+    text-align: center;
+    background: #fff;
+}
+
+.products-section {
+
+    padding-top: 100px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+
+    padding-top: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+
+    padding-top: 100px;
+    text-align: center;
+    background: #eee;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: yellow;
+    border-color: transparent;
+    text-transform: uppercase;
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    color: #e7fff8;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #525252;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    font-size: 1.2em;
+    color: #ffab00;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #ff0c19;
+    background-color: #dddddd;
+}
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #000000;
+    border-bottom-color: #777;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #f5f5f5;
+    border-bottom-color: #000000;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #ffab00;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #c8d8ff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffab00;
+}
+
+@media(min-width: 767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        background-color: #222;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
