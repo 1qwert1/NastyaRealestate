@@ -239,6 +239,27 @@ $(function() {
     })
 });
 
+$(function() {
+    if ($(window).width() > '750'){
+        var maxHeight = 0, myEl = $('.price');
+
+        myEl.each(function () {
+            var el = $(this);
+            if (el.height() >= maxHeight) {
+                maxHeight = el.height();
+            }
+        });
+        myEl.each(function () {
+            var el = $(this);
+            if (el.height() < maxHeight) {
+                var h = maxHeight - el.height();
+                el.find('li:last-child').before('<li style="height: ' + h + 'px"></li>');
+            }
+        });
+    }
+});
+
+
 
 
 

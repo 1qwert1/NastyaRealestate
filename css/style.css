@@ -167,9 +167,10 @@ header.white-header {
     text-align: center; }
     .main .text_in_main .text_down {
       position: absolute;
-      top: 30%;
-      left: 0;
-      right: 0; }
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80%; }
       .main .text_in_main .text_down .textInform {
         max-width: 90%;
         margin: auto;
@@ -255,10 +256,7 @@ header.white-header {
     header .top-head li a {
       font-size: 0.9em; }
   header nav.main-top {
-    display: none; }
-
-  .main .text_in_main .text_down {
-    top: 17%; } }
+    display: none; } }
 @media only screen and (max-width: 700px) {
   .main .text_in_main .text_down .textInform {
     font-size: 1.5em; }
